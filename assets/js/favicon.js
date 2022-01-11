@@ -32,4 +32,4 @@ image_counter = 0;
     image_counter++;
     }
 }, 50);
-// on répète toutes les 150ms
+// on répète toutes les 50ms

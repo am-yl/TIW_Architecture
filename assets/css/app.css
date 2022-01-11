@@ -27,7 +27,7 @@ body {
     font-family:'Poiret One', sans-serif;
     color:var(--noir);
     background-color: var(--blanc);
-    font-size:1.25rem;
+    font-size:1.25em;
 }
 
 h1,
@@ -87,6 +87,7 @@ header {
     z-index:9999;
     width: 100%;
     background-color: var(--noir);
+    position: fixed;
 }
 
 #logo{
@@ -116,6 +117,53 @@ header {
 }
 
 /* ACCUEIL ********************************************************************************/
+
+#accueil {
+    width: 100%;
+    height: calc(100vh - 70px);
+}
+
+.diaporama {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height:calc(100vh - 70px);
+    overflow: hidden;
+}
+
+.diapo {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.diapo.disImg{
+    opacity: 1;
+}
+
+#accueil span {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    z-index: 2;
+    background-image:linear-gradient(rgba(255,0,0,0) 30%, var(--blanc));
+}
+
+h1 {
+    text-align: right;
+    position: relative;
+    z-index: 3;
+    font-size: 6em;
+    line-height: 1em;
+    top:70vh;
+    right:var(--pad-side);
+    
+
+}
+
+
+
 /* REGLES *********************************************************************************/
 /* PARTICIPATIONS *************************************************************************/
 /* RESULTATS ******************************************************************************/
