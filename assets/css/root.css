@@ -16,6 +16,6 @@
     /* padding : */
 
     --pad-side: 15%;
-    --pad-top:100px;
-    --pad-bot:150px;
+    --pad-100:100px;
+    --pad-50:50px;
 }

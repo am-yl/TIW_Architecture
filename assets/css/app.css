@@ -36,6 +36,11 @@ h3 {
     font-family:'Bebas Neue', sans-serif;
 }
 
+h2 {
+    font-size: 6em;
+    padding-bottom: 50px;
+}
+
 a {
     text-decoration: none;
 }
@@ -66,11 +71,15 @@ a:hover {
     color:var(--vert);
 }
 
+.t-rouge {
+    color:var(--rouge);
+}
+
 /* padding */
 
 .p-y {
-    padding-top: var(--pad-top);
-    padding-bottom: var(--pad-bot);
+    padding-top: var(--pad-100);
+    padding-bottom: var(--pad-50);
 }
 
 .p-x {
@@ -126,14 +135,14 @@ header {
 .diaporama {
     z-index: 1;
     position: absolute;
-    width: 100%;
-    height:calc(100vh - 70px);
+    width: inherit;
+    height:inherit;
     overflow: hidden;
 }
 
 .diapo {
     position: absolute;
-    width: 100%;
+    width: inherit;
     opacity: 0;
     transition: opacity 1.5s;
 }
@@ -143,7 +152,7 @@ header {
 }
 
 #accueil span {
-    width: 100%;
+    width: inherit;
     height: inherit;
     position: absolute;
     z-index: 2;
@@ -156,16 +165,34 @@ h1 {
     z-index: 3;
     font-size: 6em;
     line-height: 1em;
-    top:70vh;
+    top:60vh;
     right:var(--pad-side);
     
 
 }
 
-
-
 /* REGLES *********************************************************************************/
+
+#regles p,
+#regles ul {
+    font-size: 1.3em;
+    padding-bottom: 1.25em;
+}
+
+#regles ul {
+    padding-left:var(--pad-100);
+}
+
+#regles p:last-of-type {
+    padding-bottom: 0em;
+}
+
 /* PARTICIPATIONS *************************************************************************/
 /* RESULTATS ******************************************************************************/
 /* REJOINDRE ******************************************************************************/
+
+#rejoindre {
+    background-color:var(--noir);
+}
+
 /* FOOTER *********************************************************************************/
