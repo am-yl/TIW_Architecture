@@ -181,6 +181,7 @@ h1 {
 
 #regles ul {
     padding-left:var(--pad-100);
+    list-style-type: circle;
 }
 
 #regles p:last-of-type {
