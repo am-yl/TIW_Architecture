@@ -1,23 +1,46 @@
+/******************************************************************************************/
+/*                                                                                        */
+/*    Tables des matières :                                                               */
+/*                                                                                        */
+/*    1. GLOBAL                                                                           */
+/*    2. HEADER                                                                           */
+/*    3. REGLES                                                                           */
+/*    4. PARTICIPATIONS                                                                   */
+/*    5. RESULTATS                                                                        */
+/*    6. REJOINDRE                                                                        */
+/*    7. FOOTER                                                                           */
+/*                                                                                        */
+/******************************************************************************************/
+
+
+
+/* GLOBAL *********************************************************************************/
+
 * {
     padding:0;
     margin:0;
     box-sizing: border-box;
 }
 
-/* GLOBAL */
-
 body {
     font-family:'Poiret One', sans-serif;
     color:var(--noir);
     background-color: var(--blanc);
-    padding-left: var(--pad-side);
-    padding-right: var(--pad-side);
+    font-size:1.25rem;
 }
 
 h1,
 h2,
 h3 {
     font-family:'Bebas Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {    
+    color:var(--violet);
 }
 
 /* classes de couleurs : */
@@ -42,7 +65,57 @@ h3 {
     color:var(--vert);
 }
 
+/* padding */
+
 .p-y {
     padding-top: var(--pad-top);
     padding-bottom: var(--pad-bot);
 }
+
+.p-x {
+    padding-left: var(--pad-side);
+    padding-right: var(--pad-side);
+}
+
+/* HEADER *********************************************************************************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:9999;
+    width: 100%;
+    background-color: var(--noir);
+}
+
+#logo{
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+#logo img {
+    width: 50px;
+    border-radius: 25px;
+}
+
+#nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav a {
+    padding:10px 25px;
+}
+
+#nav a:hover {
+    color:var(--blanc);
+}
+
+/* REGLES *********************************************************************************/
+/* PARTICIPATIONS *************************************************************************/
+/* RESULTATS ******************************************************************************/
+/* REJOINDRE ******************************************************************************/
+/* FOOTER *********************************************************************************/
