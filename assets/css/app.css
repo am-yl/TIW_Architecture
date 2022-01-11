@@ -3,3 +3,46 @@
     margin:0;
     box-sizing: border-box;
 }
+
+/* GLOBAL */
+
+body {
+    font-family:'Poiret One', sans-serif;
+    color:var(--noir);
+    background-color: var(--blanc);
+    padding-left: var(--pad-side);
+    padding-right: var(--pad-side);
+}
+
+h1,
+h2,
+h3 {
+    font-family:'Bebas Neue', sans-serif;
+}
+
+/* classes de couleurs : */
+
+.t-rose {
+    color:var(--rose);
+}
+
+.t-jaune {
+    color:var(--jaune);
+}
+
+.t-turq {
+    color:var(--turquoise);
+}
+
+.t-bleu {
+    color:var(--bleu);
+}
+
+.t-vert {
+    color:var(--vert);
+}
+
+.p-y {
+    padding-top: var(--pad-top);
+    padding-bottom: var(--pad-bot);
+}

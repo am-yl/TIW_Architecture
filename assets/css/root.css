@@ -1,3 +1,20 @@
 :root {
-    
+
+    /* couleurs : */
+
+    --noir:#150f0b;
+    --gris: #2f3136;
+    --blanc: #fefefe;
+    --rose: #f88bbc;
+    --bleu: #52a5e4;
+    --jaune: #f5a853;
+    --turquoise: #3daaa2;
+    --rouge: #f97878;
+    --vert: #3cab86;
+
+    /* padding : */
+
+    --pad-side: 15%;
+    --pad-top:100px;
+    --pad-bot:150px;
 }
