@@ -204,6 +204,8 @@ h1 {
 
 .slide {
     position: absolute;
+    transform: scale(0.1);
+    left:50%;
     width:845px;
     height:475px;
     opacity: 0;

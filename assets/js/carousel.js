@@ -2,11 +2,11 @@ let slider = document.querySelector('.carousel');
 if (slider) {
     let slides = slider.querySelectorAll('.slide');
     let nbSlide = slides.length;
-    let lastS = nbSlide-2;
-    let befLastS = nbSlide-1;
-    let showSlide = i = 0;
-    let nextS = 1;
-    let affNextS = 2;
+    let left = nbSlide-2;
+    let midLeft = nbSlide-1;
+    let middle = i = 0;
+    let midRight = 1;
+    let right = 2;
     // on réinitialise le slider :
 
     let affClass = ["left", "mid-left", "center", "mid-right", "right"]; // les classes d'affichages du slider
@@ -28,10 +28,10 @@ if (slider) {
             case 2 :
                 slide.classList.add('right');
                 break;
-            case lastS :
+            case left :
                 slide.classList.add('left');
                 break;
-            case befLastS :
+            case midLeft :
                 slide.classList.add('mid-left');
                 break;    
         }
@@ -42,66 +42,66 @@ if (slider) {
 
     prevArrow.addEventListener('click', function () {
         
-        slides[lastS].classList.remove('left');
-        slides[befLastS].classList.remove('mid-left');
-        slides[showSlide].classList.remove('center');
-        slides[nextS].classList.remove('mid-right');
-        slides[affNextS].classList.remove('right');
+        slides[left].classList.remove('left');
+        slides[midLeft].classList.remove('mid-left');
+        slides[middle].classList.remove('center');
+        slides[midRight].classList.remove('mid-right');
+        slides[right].classList.remove('right');
 
-        lastS -= 1;
-        befLastS -= 1;
-        showSlide -= 1;
-        nextS -= 1;
-        affNextS -= 1;
+        left -= 1;
+        midLeft -= 1;
+        middle -= 1;
+        midRight -= 1;
+        right -= 1;
         
-        if (lastS < 0) {
-            lastS = nbSlide - 1;
-        } else if (befLastS < 0) {
-            befLastS = nbSlide - 1;
-        } else if (showSlide < 0) {
-            showSlide = nbSlide - 1;
-        } else if (nextS < 0) {
-            nextS = nbSlide - 1;
-        } else if (affNextS<0) {
-            affNextS = nbSlide - 1;
+        if (left < 0) {
+            left = nbSlide - 1;
+        } else if (midLeft < 0) {
+            midLeft = nbSlide - 1;
+        } else if (middle < 0) {
+            middle = nbSlide - 1;
+        } else if (midRight < 0) {
+            midRight = nbSlide - 1;
+        } else if (right<0) {
+            right = nbSlide - 1;
         }
 
-        slides[lastS].classList.add('left');
-        slides[befLastS].classList.add('mid-left');
-        slides[showSlide].classList.add('center');
-        slides[nextS].classList.add('mid-right');
-        slides[affNextS].classList.add('right');
+        slides[left].classList.add('left');
+        slides[midLeft].classList.add('mid-left');
+        slides[middle].classList.add('center');
+        slides[midRight].classList.add('mid-right');
+        slides[right].classList.add('right');
     });
 
     nextArrow.addEventListener('click', function () {
-        slides[lastS].classList.remove('left');
-        slides[befLastS].classList.remove('mid-left');
-        slides[showSlide].classList.remove('center');
-        slides[nextS].classList.remove('mid-right');
-        slides[affNextS].classList.remove('right');
+        slides[left].classList.remove('left');
+        slides[midLeft].classList.remove('mid-left');
+        slides[middle].classList.remove('center');
+        slides[midRight].classList.remove('mid-right');
+        slides[right].classList.remove('right');
 
-        lastS += 1;
-        befLastS += 1;
-        showSlide += 1;
-        nextS += 1;
-        affNextS += 1;
+        left += 1;
+        midLeft += 1;
+        middle += 1;
+        midRight += 1;
+        right += 1;
         
-        if (lastS >= nbSlide ) {
-            lastS = 0;
-        } else if (befLastS >= nbSlide ) {
-            befLastS = 0;
-        } else if (showSlide >= nbSlide ) {
-            showSlide = 0;
-        } else if (nextS >= nbSlide ) {
-            nextS = 0;
-        } else if (affNextS >= nbSlide ) {
-            affNextS = 0;
+        if (left >= nbSlide ) {
+            left = 0;
+        } else if (midLeft >= nbSlide ) {
+            midLeft = 0;
+        } else if (middle >= nbSlide ) {
+            middle = 0;
+        } else if (midRight >= nbSlide ) {
+            midRight = 0;
+        } else if (right >= nbSlide ) {
+            right = 0;
         }
 
-        slides[lastS].classList.add('left');
-        slides[befLastS].classList.add('mid-left');
-        slides[showSlide].classList.add('center');
-        slides[nextS].classList.add('mid-right');
-        slides[affNextS].classList.add('right');
+        slides[left].classList.add('left');
+        slides[midLeft].classList.add('mid-left');
+        slides[middle].classList.add('center');
+        slides[midRight].classList.add('mid-right');
+        slides[right].classList.add('right');
     });
 }
