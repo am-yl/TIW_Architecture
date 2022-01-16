@@ -79,8 +79,8 @@ a:hover {
 /* padding */
 
 .p-y {
-    padding-top: var(--pad-100);
-    padding-bottom: var(--pad-50);
+    padding-bottom: var(--pad-75);
+    padding-top: var(--pad-75);
 }
 
 .p-x {
@@ -181,7 +181,7 @@ h1 {
 }
 
 #regles ul {
-    padding-left:var(--pad-100);
+    padding-left:100px;
     list-style-type: circle;
 }
 
@@ -193,13 +193,9 @@ h1 {
 
 .carousel {
     width: 100%;
-    height:60vh;
+    height:58vh;
     display:block;
-}
-
-.carousel nav {
-    position:relative;
-    z-index: 50;
+    padding:0;
 }
 
 .slide {
@@ -209,7 +205,7 @@ h1 {
     width:845px;
     height:475px;
     opacity: 0;
-    box-shadow: 0 3px 10px #150f0b;
+    box-shadow: 0 3px 10px var(--noir);
     transition: all .5s ease;
 }
 
@@ -237,7 +233,7 @@ h1 {
 .right {
     opacity: 1;
     z-index:6;
-    filter: blur(2px) grayscale(30%);
+    filter: blur(2px) grayscale(40%);
 }
 
 .mid-left,
@@ -254,8 +250,8 @@ h1 {
 }
 
 .mid-left {
-    transform: scale(.9) translate(38%);
     left:0%;
+    transform: scale(.9) translate(38%);
 }
 
 .mid-right {
@@ -281,10 +277,43 @@ h1 {
     opacity: 1;
 }
 
+.carousel nav {
+    width: inherit;
+    position:relative;
+    z-index: 50;
+    height:inherit;
+    display:flex;
+    align-items: end;
+    justify-content:center;
+}
+
+.carousel nav button {
+    border:none;
+    padding:15px;
+    border-radius: 50%;
+    background-color: var(--jaune);
+    box-shadow:  0 1px 5px var(--jaune);
+    transition: all .2s ease-in-out;
+}
+
+.carousel nav button:first-child {
+    margin-right:15px;
+}
+
+.carousel nav button:hover {
+    cursor: pointer;
+    background-color: var(--noir);
+    box-shadow:  0 1px 5px var(--noir);
+    color:var(--jaune);
+}
+
 #participations a {
     background-color: var(--jaune);
+    margin-top:2vh;
     padding: 20px 35px;
     float:right;
+    transition: all .2s ease-in-out;
+
 }
 
 #participations a span  {
@@ -292,6 +321,7 @@ h1 {
 }
 
 #participations a:hover {
+    box-shadow:  0 1px 5px var(--noir);
     background-color: var(--noir);
     color:var(--jaune);
 }
