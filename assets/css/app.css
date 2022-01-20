@@ -332,7 +332,82 @@ h1 {
 
 /* RESULTATS ******************************************************************************/
 
-#resultats 
+#resultats p {
+    font-size:3.5rem;
+    margin-bottom: 25px;
+}
+
+.mosaic {
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1/2fr 1fr;
+    width:100%;
+}
+
+.mosaic img {
+    width: 100%;
+    transition: all .5s ease-out;
+    filter:brightness(.7);
+}
+
+.mosaic img:hover {
+    transform:scale(1.5);
+    box-shadow: 0px 5px 15px var(--noir);
+    z-index:5;
+    filter:brightness(1);
+}
+
+#i-3, #i-6 {   
+    transform-origin: left;
+}
+
+#i-5, #i-9 {   
+    transform-origin: right;
+}
+
+#i-1 {
+    transform-origin: top left;
+}
+
+#i-2 {
+    transform-origin: top right;
+}
+
+#i-10 {
+    transform-origin: bottom left;
+}
+
+#i-11 {
+    transform-origin: bottom right;
+}
+
+.mosaic .i1-50 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.mosaic .i2-50 {    
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.mosaic #i-3 {    
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.mosaic #i-4 {    
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.mosaic #i-5 {    
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+
 
 /* REJOINDRE ******************************************************************************/
 
