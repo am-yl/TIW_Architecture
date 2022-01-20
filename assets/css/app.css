@@ -452,6 +452,7 @@ h1 {
 
 #rejoindre input[type="submit"]:hover {
     background-color: var(--bleu);
+    cursor: pointer;
 }
 
 #rejoindre .details {
