@@ -39,7 +39,7 @@ h3 {
 
 h2 {
     font-size: 6em;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 a {
@@ -99,6 +99,7 @@ header {
     width: 100%;
     background-color: var(--noir);
     position: fixed;
+    border-bottom: 1px solid var(--blanc);
 }
 
 #logo{
@@ -407,12 +408,55 @@ h1 {
     grid-column-end: 5;
 }
 
-
-
 /* REJOINDRE ******************************************************************************/
 
 #rejoindre {
     background-color:var(--noir);
+    color:var(--blanc);
+    font-size:1.5rem;
+}
+
+#rejoindre form {
+    margin:auto;
+    margin-top:50px;
+    text-align: right;
+    width: 50%;
+}
+
+#rejoindre label {
+    display: block;
+    text-align: left;
+    font-size: 1.5rem;
+
+}
+
+#rejoindre input {
+    width:100%;
+    padding:15px 20px;
+    margin:10px 0 20px;
+    border-radius: 10px;
+    border:none;
+    font-family: 'Poiret One';
+    font-size: 1.5rem;
+}
+
+#rejoindre input[type="submit"] {
+    width:auto;
+    margin-top:20px;
+    padding:15px 30px;
+    background-color: var(--blanc);
+    font-size: 1.5rem;
+    font-family: 'Poiret One';
+
+}
+
+#rejoindre input[type="submit"]:hover {
+    background-color: var(--bleu);
+}
+
+#rejoindre .details {
+    font-style: italic;
+    font-size:1rem;
 }
 
 /* FOOTER *********************************************************************************/
