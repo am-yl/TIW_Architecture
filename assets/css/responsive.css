@@ -1,0 +1,194 @@
+@media screen and (max-width:1500px) {
+    h1,h2 {
+        font-size:5em;
+    }
+}
+
+@media screen and (max-width:1280px){
+    #nav ul li a {
+        padding: 10px 20px;
+    }
+
+    h1,h2 {
+        font-size:4.5em;
+    }
+    
+    .slide {
+        width:600px;
+    }
+
+    .archi {
+        font-size:2.5rem;
+        top:85%;
+        right:4%;
+    }
+
+    #resultats p {
+        font-size: 2.5rem;
+    }
+
+    #rejoindre form {
+        width: 70%;;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    
+    .p-x {
+        padding-left:10%;
+        padding-right:10%;
+    }
+    
+    #nav ul li a {
+        padding: 10px 15px;
+    }
+
+    .right {
+        left:68%;
+    } 
+
+    .mid-left {
+        left:-10%;
+    }
+
+    .carousel nav button {
+        padding:20px;
+    }
+
+    .carousel nav button:first-child {
+        margin-right:30px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    
+    .body {
+        font-size:1em;
+    }
+
+
+    .p-x {
+        padding-left:5%;
+        padding-right:5%;
+    }
+    
+    .p-y {
+        padding-top:75px;
+        padding-bottom:25px;
+    }
+    
+    #nav label {
+        display:block;
+        z-index:auto;
+        position: absolute;
+        top:15px;
+        right:15px;
+    }
+
+    #nav > ul {
+        display:none;
+    }
+
+    #nav input:checked + ul{
+        display:flex;
+        position:absolute;
+        width:100%;
+        top:70px;
+        left:0;
+        height:auto;
+        background:var(--noir);
+        z-index:auto;
+        flex-direction:column;
+        justify-content:flex-start;
+    }
+    #nav > ul li {
+        width: 100%;
+    }
+
+    #nav > ul li a{
+        text-align: right;
+        padding:30px 10%;
+        border-bottom:1px solid var(--blanc);
+    }
+
+    #nav > ul li:hover,#nav > ul li:active{
+        background-color:var(--gris);
+    }
+
+    #logo > img{
+        width:45px;
+    }
+    
+    .diapo {
+        top:70px;
+    }
+
+    #accueil {
+        height: 435px;
+    }
+
+    h1,h2 {
+        font-size:3em;
+    }
+
+    #participations,
+    #resultats {
+        margin-bottom: 50px;
+    }
+
+    .carousel {
+        height: 35vh;
+    }
+
+    .slide {
+        width:500px;
+    }
+
+    .archi {
+        font-size:2.5rem;
+        top:85%;
+        right:4%;
+    }
+
+    .right, .left {
+        opacity: 0;
+    }
+
+    .mid-left {
+        left:-16%;
+    }
+
+    #resultats p {
+        font-size:2rem;
+    }
+
+    .mosaic {
+        grid-template-rows: 1fr 1/2fr 1fr 1fr;
+    }
+
+    #i-6, #i-8 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        transform-origin: left;
+    }
+
+    #i-7, #i-9 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        transform-origin: right;
+    }
+
+    #rejoindre form {
+        width: 80%;;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+}
+
+@media screen and (max-width:320px) {
+    
+}

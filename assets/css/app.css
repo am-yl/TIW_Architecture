@@ -48,7 +48,7 @@ a {
 }
 
 a:hover {    
-    color:var(--violet);
+    color:var(--blanc);
 }
 
 /* classes de couleurs : */
@@ -97,6 +97,7 @@ header {
     align-items: center;
     z-index:9999;
     width: 100%;
+    height:70px;
     background-color: var(--noir);
     position: fixed;
     border-bottom: 1px solid var(--blanc);
@@ -113,6 +114,15 @@ header {
     border-radius: 25px;
 }
 
+#nav label {
+    display:none;
+    color:var(--blanc);
+}
+
+#nav input {
+    display:none;
+}
+
 #nav ul {
     list-style-type: none;
     display: flex;
@@ -122,10 +132,7 @@ header {
 
 #nav a {
     padding:10px 25px;
-}
-
-#nav a:hover {
-    color:var(--blanc);
+    display: block;
 }
 
 /* ACCUEIL ********************************************************************************/
@@ -145,6 +152,7 @@ header {
 
 .diapo {
     position: absolute;
+    top:70px;
     width: inherit;
     opacity: 0;
     transition: opacity 1.5s;
@@ -154,24 +162,23 @@ header {
     opacity: 1;
 }
 
-#accueil span {
-    width: inherit;
-    height: inherit;
+#accueil #titre {
+    width: 100%;
+    height:inherit;
     position: absolute;
     z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: var(--pad-75);
     background-image:linear-gradient(rgba(255,0,0,0) 30%, var(--blanc));
+    border:red solid 1px;
 }
 
 h1 {
     text-align: right;
-    position: relative;
-    z-index: 3;
     font-size: 6em;
     line-height: 1em;
-    top:60vh;
-    right:var(--pad-side);
-    
-
 }
 
 /* REGLES *********************************************************************************/
@@ -204,8 +211,8 @@ h1 {
     position: absolute;
     transform: scale(0.1);
     left:50%;
-    width:845px;
-    height:475px;
+    width:845px;   
+    aspect-ratio: 16 / 9;
     opacity: 0;
     box-shadow: 0 3px 10px var(--noir);
     transition: all .5s ease;
@@ -229,7 +236,6 @@ h1 {
     text-align: right;
     font-size: 3rem;
     text-transform: uppercase;
-    /* color:var(--jaune); */
     text-shadow: -1px -1px 4px var(--jaune),  2px 2px 5px var(--noir);
 }
 
@@ -304,7 +310,8 @@ h1 {
     margin-right:15px;
 }
 
-.carousel nav button:hover {
+.carousel nav button:hover,
+.carousel nav button:active {
     cursor: pointer;
     background-color: var(--noir);
     box-shadow:  0 1px 5px var(--noir);
@@ -324,7 +331,8 @@ h1 {
     text-decoration: underline;
 }
 
-#participations a:hover {
+#participations a:hover,
+#participations a:active {
     box-shadow:  0 1px 5px var(--noir);
     background-color: var(--noir);
     color:var(--jaune);
@@ -350,9 +358,11 @@ h1 {
     width: 100%;
     transition: all .5s ease-out;
     filter:brightness(.7);
+    z-index: 1;
 }
 
-.mosaic img:hover {
+.mosaic img:hover,
+.mosaic img:active {
     transform:scale(1.5);
     box-shadow: 0px 5px 15px var(--noir);
     z-index:5;
