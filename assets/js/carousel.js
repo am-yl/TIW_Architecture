@@ -1,15 +1,19 @@
 let slider = document.querySelector('.carousel');
 if (slider) {
-    let slides = slider.querySelectorAll('.slide');
-    let nbSlide = slides.length;
+    let slides = slider.querySelectorAll('.slide'); // on récupère toutes les slides
+    let nbSlide = slides.length; // on enregistre le nombre de slide présentes
+    
+    // initialisation des compteurs avec la première image au centre
     let left = nbSlide-2;
     let midLeft = nbSlide-1;
     let middle = i = 0;
     let midRight = 1;
     let right = 2;
+
     // on réinitialise le slider :
 
     let affClass = ["left", "mid-left", "center", "mid-right", "right"]; // les classes d'affichages du slider
+
     // on parcourt toutes les slides une fois et on retire les classes
     while(i < nbSlide) {
         slides[i].classList.remove(...affClass);
@@ -36,9 +40,16 @@ if (slider) {
                 break;    
         }
     }
-
+    // fin de la réinitialisation du slider
+    
     let prevArrow = slider.querySelector('.prev');
     let nextArrow = slider.querySelector('.next');
+
+    // si on clique sur la flèche "précedente" : 
+        // on retire toutes les classes d'affichages des slides 
+        // on décrémente les compteurs
+        // on vérifie si l'un d'entre eux est égal ou inférieur à 0 ; si oui on l'initialise à nbSlides-1
+        // on ajoute chaque classe d'affichage avec les nouvelles valeurs de compteurs
 
     prevArrow.addEventListener('click', function () {
         
@@ -72,6 +83,13 @@ if (slider) {
         slides[midRight].classList.add('mid-right');
         slides[right].classList.add('right');
     });
+    // fin du code sur la flèche "précendente"
+    
+    // si on clique sur la flèche "suivante" : 
+        // on retire toutes les classes d'affichages des slides 
+        // on incrémente les compteurs
+        // on vérifie si l'un d'entre eux est égal ou supérieur à nbSlide ; si oui on l'initialise à 0
+        // on ajoute chaque classe d'affichage avec les nouvelles valeurs de compteurs
 
     nextArrow.addEventListener('click', function () {
         slides[left].classList.remove('left');
@@ -104,4 +122,5 @@ if (slider) {
         slides[midRight].classList.add('mid-right');
         slides[right].classList.add('right');
     });
+    // fin du code sur la flèche "suivante"
 }

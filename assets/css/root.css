@@ -1,6 +1,6 @@
 :root {
 
-    /* couleurs : */
+    /* variables de couleurs : */
 
     --noir:#150f0b;
     --gris: #2f3136;
@@ -12,7 +12,7 @@
     --rouge: #f97878;
     --vert: #3cab86;
 
-    /* padding : */
+    /* variable de padding : */
 
     --pad-side: 15%;
     --pad-75:75px;

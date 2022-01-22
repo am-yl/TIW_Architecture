@@ -32,8 +32,7 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-family:'Bebas Neue', sans-serif;
 }
 
@@ -51,7 +50,7 @@ a:hover {
     color:var(--blanc);
 }
 
-/* classes de couleurs : */
+/* classes pour les couleurs de texte : */
 
 .t-rose {
     color:var(--rose);
@@ -103,7 +102,7 @@ header {
     border-bottom: 1px solid var(--blanc);
 }
 
-#logo{
+#logo {
     display:block;
     padding-top:10px;
     padding-bottom:10px;
@@ -151,6 +150,7 @@ header {
     overflow: hidden;
 }
 
+/* toutes les images du diapo sont en opacity 0 */
 .diapo {
     position: absolute;
     top:70px;
@@ -159,6 +159,7 @@ header {
     transition: opacity 1.5s;
 }
 
+/* l'image affichée 'displayImage' à une opacity de 1 */
 .diapo.disImg{
     opacity: 1;
 }
@@ -173,7 +174,6 @@ header {
     justify-content: flex-end;
     padding-bottom: var(--pad-75);
     background-image:linear-gradient(rgba(255,0,0,0) 30%, var(--blanc));
-    /* border:red solid 1px; */
 }
 
 h1 {
@@ -208,6 +208,9 @@ h1 {
     padding:0;
 }
 
+
+/* initialisation de chaque slide du carousel */
+
 .slide {
     position: absolute;
     transform: scale(0.1);
@@ -219,6 +222,7 @@ h1 {
     transition: all .5s ease;
 }
 
+/* initialisation de chaque image du carousel */
 .slide img {
     position:absolute;
     width: 100%;
@@ -226,6 +230,8 @@ h1 {
     object-fit: cover;
 }
 
+
+/* initialisation de la figcaption de chaque slide */
 .archi {
     opacity: 0;
     position: relative;
@@ -239,6 +245,9 @@ h1 {
     text-transform: uppercase;
     text-shadow: -1px -1px 4px var(--jaune),  2px 2px 5px var(--noir);
 }
+
+/* style des classes permettant l'affichage des slides du carousel */
+/* affichage dans l'ordre : left ; mid-left ; center ; mid-right ; right */
 
 .left,
 .right {
@@ -254,6 +263,8 @@ h1 {
     filter: blur(1px) grayscale(25%);
 
 }
+
+/* placemenent de chaque slide par classe & affichage à l'aide d'opacity*/
 
 .left {
     left:0%;
@@ -284,10 +295,12 @@ h1 {
     box-shadow: 0 0 10px 2px var(--jaune);
 }
 
+/* affichage de la figcaption pour la slide centrale */
 .center .archi {
     opacity: 1;
 }
 
+/* gestion des boutons permettant de changer de slide du carousel */
 .carousel nav {
     width: 100%;
     z-index: 50;
@@ -318,7 +331,7 @@ h1 {
     color:var(--jaune);
 }
 
-
+/* bouton permettant d'aller voir toutes les participations */
 #btn {
     display:flex;
     justify-content: flex-end;
@@ -351,6 +364,7 @@ h1 {
     margin-bottom: 25px;
 }
 
+/* on créer la grille d'affichage des images */
 .mosaic {
     display: grid;
     grid-gap:10px;
@@ -359,6 +373,7 @@ h1 {
     width:100%;
 }
 
+/* style de toutes les images */
 .mosaic img {
     width: 100%;
     transition: all .5s ease-out;
@@ -374,6 +389,7 @@ h1 {
     filter:brightness(1);
 }
 
+/* initialisation des origines pour que les effets en hover & active ne dépassent pas sur les côtés */
 #i-3, #i-6 {   
     transform-origin: left;
 }
@@ -398,6 +414,7 @@ h1 {
     transform-origin: bottom right;
 }
 
+/* placement des images dans la grille */
 .mosaic .i1-50 {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -431,6 +448,7 @@ h1 {
     font-size:1.5rem;
 }
 
+/* mise en forme du formulaire de contact */
 #rejoindre form {
     margin:auto;
     margin-top:50px;
@@ -442,7 +460,6 @@ h1 {
     display: block;
     text-align: left;
     font-size: 1.5rem;
-
 }
 
 #rejoindre input {
@@ -455,6 +472,7 @@ h1 {
     font-size: 1.5rem;
 }
 
+/* mise en forme du bouton d'envoi */
 #rejoindre input[type="submit"] {
     width:auto;
     margin-top:20px;
@@ -462,7 +480,6 @@ h1 {
     background-color: var(--blanc);
     font-size: 1.5rem;
     font-family: 'Poiret One';
-
 }
 
 #rejoindre input[type="submit"]:hover {
@@ -470,7 +487,8 @@ h1 {
     cursor: pointer;
 }
 
-#rejoindre .details {
+/* mise en forme des informations présentes & ajoutées au formulaire */
+#rejoindre .infos {
     font-style: italic;
     font-size:1rem;
 }
