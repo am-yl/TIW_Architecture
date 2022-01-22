@@ -1,33 +1,36 @@
 @media screen and (max-width:1500px) {
-    h1,h2 {
-        font-size:5em;
+
+    h1,
+    h2 {
+        font-size: 5em;
     }
 }
 
 
 /* 1280 ************************************************************************/
 
-@media screen and (max-width:1280px){
+@media screen and (max-width:1280px) {
     #nav ul li a {
         padding: 10px 20px;
     }
 
-    h1,h2 {
-        font-size:4.5em;
+    h1,
+    h2 {
+        font-size: 4.5em;
     }
 
     .carousel {
-        height: 54vh;
+        height: 60vh;
     }
-    
+
     .slide {
-        width:60%;
+        width: 50%;
     }
 
     .archi {
-        font-size:2.5rem;
-        top:85%;
-        right:4%;
+        font-size: 2.5rem;
+        top: 85%;
+        right: 4%;
     }
 
     #resultats p {
@@ -35,7 +38,8 @@
     }
 
     #rejoindre form {
-        width: 70%;;
+        width: 70%;
+        ;
     }
 
 }
@@ -44,30 +48,34 @@
 
 
 @media screen and (max-width:1024px) {
-    
+
     .p-x {
-        padding-left:10%;
-        padding-right:10%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
-    
+
     #nav ul li a {
         padding: 10px 15px;
     }
 
+    .carousel {
+        height: 50vh;
+    }
+
     .right {
-        left:68%;
-    } 
+        left: 68%;
+    }
 
     .mid-left {
-        left:10%;
+        left: 10%;
     }
 
     .carousel nav button {
-        padding:20px;
+        padding: 20px;
     }
 
     .carousel nav button:first-child {
-        margin-right:30px;
+        margin-right: 30px;
     }
 
 }
@@ -76,74 +84,77 @@
 
 
 @media screen and (max-width:768px) {
-    
+
     .body {
-        font-size:1em;
+        font-size: 1em;
     }
 
 
     .p-x {
-        padding-left:5%;
-        padding-right:5%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
-    
+
     .p-y {
-        padding-top:75px;
-        padding-bottom:25px;
+        padding-top: 75px;
+        padding-bottom: 25px;
     }
-    
+
     #nav label {
-        display:block;
-        z-index:auto;
+        display: block;
+        z-index: auto;
         position: absolute;
-        top:15px;
-        right:15px;
+        top: 15px;
+        right: 15px;
     }
 
-    #nav > ul {
-        display:none;
+    #nav>ul {
+        display: none;
     }
 
-    #nav input:checked + ul{
-        display:flex;
-        position:absolute;
-        width:100%;
-        top:70px;
-        left:0;
-        height:auto;
-        background:var(--noir);
-        z-index:auto;
-        flex-direction:column;
-        justify-content:flex-start;
+    #nav input:checked+ul {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        left: 0;
+        height: auto;
+        background: var(--noir);
+        z-index: auto;
+        flex-direction: column;
+        justify-content: flex-start;
     }
-    #nav > ul li {
+
+    #nav>ul li {
         width: 100%;
     }
 
-    #nav > ul li a{
+    #nav>ul li a {
         text-align: right;
-        padding:30px 10%;
-        border-bottom:1px solid var(--blanc);
+        padding: 30px 10%;
+        border-bottom: 1px solid var(--blanc);
     }
 
-    #nav > ul li:hover,#nav > ul li:active{
-        background-color:var(--gris);
+    #nav>ul li:hover,
+    #nav>ul li:active {
+        background-color: var(--gris);
     }
 
-    #logo > img{
-        width:45px;
+    #logo>img {
+        width: 45px;
     }
-    
+
     .diapo {
-        top:70px;
+        top: 70px;
     }
 
     #accueil {
         height: 435px;
     }
 
-    h1,h2 {
-        font-size:3em;
+    h1,
+    h2 {
+        font-size: 3em;
     }
 
     #participations,
@@ -153,12 +164,19 @@
 
     .carousel {
         height: auto;
-        position:relative;
+        position: relative;
     }
 
     .slide {
-        width:90%;
-        position:relative;
+        width: 90%;
+        position: relative;
+        display: none;
+    }
+
+    .mid-left,
+    .mid-right,
+    .left,
+    .right {
         display: none;
     }
 
@@ -167,52 +185,48 @@
     }
 
     .archi {
-        font-size:2.5rem;
-        top:85%;
-        right:4%;
-    }
-
-    .left,
-    .mid-left,
-    .mid-right,
-    .right {
-        display: none;
+        font-size: 2.5rem;
+        top: 85%;
+        right: 4%;
     }
 
     .carousel nav {
-        height:auto;
-        position:absolute;
-        top:50%;
+        height: auto;
+        position: absolute;
+        top: 50%;
         justify-content: space-between;
     }
 
     #participations #btn {
         justify-content: center;
-        margin-top:60px;
+        margin-top: 60px;
     }
 
     #resultats p {
-        font-size:2rem;
+        font-size: 2rem;
     }
 
     .mosaic {
         grid-template-rows: 1fr 1/2fr 1fr 1fr;
     }
 
-    #i-6, #i-8 {
+    #i-6,
+    #i-8 {
         grid-column-start: 1;
         grid-column-end: 3;
         transform-origin: left;
     }
 
-    #i-7, #i-9 {
+    #i-7,
+    #i-9 {
         grid-column-start: 3;
         grid-column-end: 5;
         transform-origin: right;
     }
 
     #rejoindre form {
-        width: 80%;;
+        width: 80%;
+        ;
     }
 }
 
@@ -220,30 +234,36 @@
 
 
 @media screen and (max-width:480px) {
-    
+
     .p-y {
         padding-bottom: 0px;
     }
-    
-    h1,h2 {
-        font-size:2.7em;
+
+    h1,
+    h2 {
+        font-size: 2.7em;
     }
 
     #accueil {
-        height:325px;
+        height: 325px;
     }
 
     .archi {
-        font-size:1.8rem;
-        top:100%;
-        right:0;
+        font-size: 1.8rem;
+        top: 100%;
+        right: 0;
+    }
+
+    .carousel nav button {
+        padding: 10px;
+        font-size: 1.25rem;
     }
 
     .mosaic {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
-    
+
     .mosaic #i-3,
     .mosaic #i-4,
     .mosaic #i-5 {
@@ -257,13 +277,12 @@
     .mosaic #i-8,
     .mosaic #i-9,
     .mosaic #i-10,
-    .mosaic #i-11
-    {
+    .mosaic #i-11 {
         grid-column-start: 1;
         grid-column-end: 2;
         pointer-events: none;
         box-shadow: 0px 5px 5px var(--noir);
-        filter:brightness(1);
+        filter: brightness(1);
     }
 
     #rejoindre form {
