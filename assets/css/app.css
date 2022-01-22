@@ -28,7 +28,7 @@ body {
     font-family:'Poiret One', sans-serif;
     color:var(--noir);
     background-color: var(--blanc);
-    font-size:1.25em;
+    font-size:1em;
 }
 
 h1,
@@ -38,7 +38,7 @@ h3 {
 }
 
 h2 {
-    font-size: 6em;
+    font-size: 6rem;
     padding-bottom: 20px;
 }
 
@@ -172,12 +172,12 @@ header {
     justify-content: flex-end;
     padding-bottom: var(--pad-75);
     background-image:linear-gradient(rgba(255,0,0,0) 30%, var(--blanc));
-    border:red solid 1px;
+    /* border:red solid 1px; */
 }
 
 h1 {
     text-align: right;
-    font-size: 6em;
+    font-size: 6rem;
     line-height: 1em;
 }
 
@@ -185,7 +185,7 @@ h1 {
 
 #regles p,
 #regles ul {
-    font-size: 1.3em;
+    font-size: 1.3rem;
     padding-bottom: 1.25em;
 }
 
@@ -256,29 +256,29 @@ h1 {
 
 .left {
     left:0%;
-    transform: scale(.75) translate(0);
+    transform: scale(.75) translateX(0);
 }
 
 .mid-left {
-    left:0%;
-    transform: scale(.9) translate(38%);
+    left:15%;
+    transform: scale(.9) translateX(0%);
 }
 
 .mid-right {
     left:66%;
-    transform: translate(-58%) scale(.9);
+    transform: translateX(-58%) scale(.9);
 }
 
 .right {
     left:75%;
-    transform: scale(.75) translate(-58%);
+    transform: scale(.75) translateX(-58%);
 }
 
 .center {
     opacity: 1;
     z-index:10;
     left:50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
     filter:none;
     box-shadow: 0 0 10px 2px var(--jaune);
 }
@@ -288,8 +288,7 @@ h1 {
 }
 
 .carousel nav {
-    width: inherit;
-    position:relative;
+    width: 100%;
     z-index: 50;
     height:inherit;
     display:flex;
@@ -318,11 +317,16 @@ h1 {
     color:var(--jaune);
 }
 
+
+#btn {
+    display:flex;
+    justify-content: flex-end;
+    margin-top:2vh;
+}
+
 #participations a {
     background-color: var(--jaune);
-    margin-top:2vh;
     padding: 20px 35px;
-    float:right;
     box-shadow:  0 1px 5px var(--jaune);
     transition: all .2s ease-in-out;
 }
